@@ -9,6 +9,8 @@ class Sale extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['product_id']; //　追記
+
     public function product()
     {
         return $this->belongsTo(Product::class);
